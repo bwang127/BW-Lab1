@@ -18,14 +18,18 @@ h1 {
     margin-left: 20px;
 }
 
+#content{
+    display:flex;
+    flex-direction:row;
+}
+#images{
+    display:flex;
+}
+
 .pic{
     width: 32%;
     height: auto;
-    padding: 20px;
-    margin-right: 200px;
-    float: right;
     clear: both;
-    position: relative;
     border-radius: 30px;
 }
 

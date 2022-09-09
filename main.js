@@ -27,24 +27,25 @@ let facts = [
     "Boston College is the most popular college on Instagram. BC’s Gasson Hall, is the third most Instagrammed college building in the country."
 ];
 
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector("#generate").onclick = function () {
+        let randomFact = facts[Math.floor(Math.random() * facts.length)];
+    
+        // CREATE NEW PARAGRAPH-TAG
+        let paragraph = document.createElement("p");
+        paragraph.className = "generated-content";
+    
+        // CREATE PARAGRAPH CONTENT
+        let node = document.createTextNode(randomFact);
+    
+        // ADD PARAGRAPH CONTENT TO TAG
+        paragraph.appendChild(node);
+    
+        // ADD PARAGRAPH TO DIV-CONTAINER WITH ID "content"
+        let element = document.querySelector("#content");
+        element.appendChild(paragraph);
+    
+        this.blur(); // lose focus
+    };
+})
 
-
-document.querySelector("#generate").onclick = function () {
-    let randomFact = facts[Math.floor(Math.random() * facts.length)];
-
-    // CREATE NEW PARAGRAPH-TAG
-    let paragraph = document.createElement("p");
-    paragraph.className = "generated-content";
-
-    // CREATE PARAGRAPH CONTENT
-    let node = document.createTextNode(randomFact);
-
-    // ADD PARAGRAPH CONTENT TO TAG
-    paragraph.appendChild(node);
-
-    // ADD PARAGRAPH TO DIV-CONTAINER WITH ID "content"
-    let element = document.querySelector("#content");
-    element.appendChild(paragraph);
-
-    this.blur(); // lose focus
-}
