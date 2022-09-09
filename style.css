@@ -1,0 +1,40 @@
+h1 {
+    font-size: 50px;
+    font-family: "helvitica", sans-serif;
+    color: darkgray;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.generated-content{
+    background-color: rgba(255, 228, 196, 0.342);
+    padding: 20px;
+    width: 40%;
+    font-family: "helvitica", sans-serif;
+    margin: 20px;
+}
+
+#generate.button{
+    margin-left: 20px;
+}
+
+.pic{
+    width: 32%;
+    height: auto;
+    padding: 20px;
+    margin-right: 200px;
+    float: right;
+    clear: both;
+    position: relative;
+    border-radius: 30px;
+}
+
+a{
+    float: right;
+    clear: both;
+    width: 20%;
+    margin-right:300px;
+    font-size: 15px;
+}
+
+
