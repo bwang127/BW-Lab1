@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
         paragraph.appendChild(node);
     
         // ADD PARAGRAPH TO DIV-CONTAINER WITH ID "content"
-        let element = document.querySelector("#content");
+        let element = document.querySelector("#left");
         element.appendChild(paragraph);
     
         this.blur(); // lose focus
